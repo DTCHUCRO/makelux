@@ -1,18 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style> html {background-color: rgb(59, 5, 49);}
-           h1 {margin-left: 822px; color: rgb(214, 214, 240); font-size: 50px;}
-           img {margin-left: 810px;}
-           h2 {margin-left: 900px; margin-top: 450px;  color: rgb(214, 214, 240);}
-           </style>
-</head>
-<body>
-    <img src="make-removebg-preview.png" alt="" height="300">
-    <h1>MAKE LUX</h1>
-    <h2><U>CADASTRO</U></h2>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>CADASTRE-SE</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+        
+        <style>
+        html {
+	background-color:#000000;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+body {
+	width:560px;
+	border:1px solid #d11d1d;
+	margin:10px auto;
+	background-color:#72a20a;
+	padding:10px 30px;
+	border-radius:5px;
+}
+
+h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:30px;
+	font-style:italic;
+	letter-spacing:-0.05em;
+	color:rgb(26, 9, 1);
+	margin: 20px; 
+    text-align: center;
+
+
+	text-shadow:1px 1px 2px #666;
+}
+
+input {
+	display:block;
+	margin-bottom:20px;
+	border:1px solid #999;
+	padding:8px;
+	border-radius:3px;
+}
+
+input:focus {
+	border:1px solid #d36b6b;
+	outline:none;
+}
+
+input[type=submit] {
+	width:100px;
+	color:#FFF;
+	background:linear-gradient(top, #F33, #933 );
+	border:1px solid #333;
+	cursor:pointer;
+}
+
+
+        </style>
+        
+        
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            
+            <input type="text" name="nome" id="nome" size="30" maxlength="100" required autofocus placeholder="Insira seu nome">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" size="30" maxlength="30"> 
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="30" maxlength="60" required>             
+            
+            <label for="website">Web Site</label>
+            <input type="url" name="website" id="website" size="30" maxlength="60">             
+
+            
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+        </form>
+    
+    </body>
 </html>
