@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Make Lux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(59,5,49);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(59,5,49);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        .switch {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .switch a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+        .switch a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <label for="login-password">Senha:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="switch">
+            <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="register-container" style="display: none;">
+        <h2>Cadastro</h2>
+        <form id="register-form">
+            <label for="register-name">Nome:</label>
+            <input type="text" id="register-name" name="name" required>
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            <label for="register-password">Senha:</label>
+            <input type="password" id="register-password" name="password" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="switch">
+            <p>Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('show-register').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('register-container').style.display = 'block';
+        });
+
+        document.getElementById('show-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('register-container').style.display = 'none';
+            document.getElementById('login-container').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

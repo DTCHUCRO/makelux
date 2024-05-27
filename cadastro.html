@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Make Lux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(59,5,49);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(59,5,49);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .captcha-checkbox {
+            margin-right: 0.5rem;
+        }
+        .switch {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .switch a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+        .switch a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="register-container">
+        <h2>Cadastro</h2>
+        <form id="register-form">
+            <label for="register-name">Nome:</label>
+            <input type="text" id="register-name" name="name" required>
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            <label for="register-phone">Telefone:</label>
+            <input type="tel" id="register-phone" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="xx xxxxx-xxxx" required>
+            <label for="register-password">Senha:</label>
+            <input type="password" id="register-password" name="password" required>
+            <div class="captcha-container">
+                <input type="checkbox" id="register-captcha" class="captcha-checkbox" required>
+                <label for="register-captcha">Eu não sou um robô</label>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="switch">
+            <p>Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('show-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('register-container').style.display = 'none';
+            document.getElementById('login-container').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
