@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .payment-option {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .payment-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .payment-option img {
+            width: 100px;
+            height: auto;
+        }
+        .payment-option span {
+            display: block;
+            margin-top: 10px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha uma opção de pagamento</h1>
+        <div class="payment-options">
+            <div class="payment-option">
+                <img src="pix-icon.png" alt="PIX">
+                <span>PIX</span>
+            </div>
+            <div class="payment-option">
+                <img src="credit-card-icon.png" alt="Cartão de Crédito">
+                <span>Cartão de Crédito</span>
+            </div>
+            <div class="payment-option">
+                <img src="boleto-icon.png" alt="Boleto Bancário">
+                <span>Boleto Bancário</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
