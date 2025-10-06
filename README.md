@@ -80,7 +80,7 @@ Contribuições são sempre bem-vindas! Se você tiver sugestões para o design 
 
 ## 📞 Contato
 
-Desenvolvido por **DTCHUCRO**.
+Desenvolvido por **DTCHUCRO** e **shinylucasin**.
 
 ---
 
