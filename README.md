@@ -1,8 +1,11 @@
+```markdown
 # 💄 Make Lux
 
 Projeto de e-commerce focado na venda de produtos de maquiagem.
 
-O **Make Lux** é um projeto de loja virtual (e-commerce) desenvolvido primariamente com **HTML e CSS** (pelo que é visível na página principal) para apresentar e comercializar produtos de maquiagem. O objetivo é criar uma interface de usuário simples e responsiva para a visualização de produtos, com navegação básica entre as páginas de `Home`, `Produtos`, `Sobre Nós`, `Contato`, `Login` e `Cadastro`.
+O **Make Lux** é um projeto de loja virtual (e-commerce) desenvolvido primariamente com **HTML e CSS**. O objetivo é criar uma interface de usuário simples e visualmente agradável, focada na apresentação e comercialização de produtos de maquiagem.
+
+A navegação básica inclui links para **Home**, **Produtos**, **Sobre Nós**, **Contato**, **Login** e **Cadastro**.
 
 ---
 
@@ -11,78 +14,80 @@ O **Make Lux** é um projeto de loja virtual (e-commerce) desenvolvido primariam
 O projeto em seu estado inicial utiliza as seguintes tecnologias:
 
 * **HTML5:** Estrutura fundamental das páginas web.
-* **CSS3:** Estilização (design, layout, cores, responsividade básica).
+* **CSS3:** Estilização (design, layout, cores e responsividade básica).
 
 ---
 
-## ✨ Funcionalidades (Página Inicial)
+## ✨ Funcionalidades
 
 A página inicial (`index.html`) apresenta as seguintes funcionalidades:
 
-* **Header (Cabeçalho):** Título principal do site (`Make Lux`).
-* **Menu de Navegação:** Links para as principais seções do site: `Home`, `Produtos`, `Sobre Nós`, `Contato`, `Login` e `Cadastro`.
-* **Produtos em Destaque:** Exibição de uma grade de produtos (e.g., Batom Vermelho, Base Líquida, Máscara de Cílios) com imagens, nomes e preços.
-* **Rodapé:** Informações de copyright e titularidade.
+* **Menu de Navegação:** Links para as principais seções do site.
+* **Produtos em Destaque:** Exibição de uma grade de produtos (e.g., Batom Vermelho, Base Líquida) com imagens, nomes e preços.
+* **Design de E-commerce:** Layout focado em mostrar os produtos de forma clara e organizada.
 
 ---
 
-## 📂 Estrutura de Pastas (Esperada)
+## 📂 Estrutura de Pastas
 
-Embora o código não mostre a estrutura completa, o HTML sugere a seguinte organização de arquivos e pastas:
+A estrutura do projeto, baseada nos links do HTML, é organizada da seguinte forma:
+
 
 makelux/
-├── index.html          # Página Inicial (Home)
-├── produtos.html       # Lista completa de produtos
-├── sobre.html          # Informações sobre a loja
-├── contato.html        # Formulário ou informações de contato
-├── login.html          # Página de Login
-├── cadastro.html       # Página de Cadastro de usuário
-├── batom.html          # Exemplo de página de produto específico
-└── imagem/             # Diretório para todas as imagens dos produtos
-    ├── batom.jpg
-    ├── base.png
-    ├── mascara.png
-    ├── sombra.jpg
-    ├── blush.png
-    └── iluminador.png
-    
+├── index.html          \# Página Inicial (Home)
+├── produtos.html       \# Lista completa de produtos
+├── sobre.html          \# Informações sobre a loja
+├── contato.html        \# Formulário ou informações de contato
+├── login.html          \# Página de Login
+├── cadastro.html       \# Página de Cadastro de usuário
+├── batom.html          \# Exemplo de página de produto específico
+└── imagem/             \# Diretório para todas as imagens dos produtos
+├── batom.jpg
+├── base.png
+├── mascara.png
+├── sombra.jpg
+├── blush.png
+└── iluminador.png
+
+
 ---
 
 ## 🛠 Como Rodar o Projeto Localmente
 
-Como o projeto atual é composto apenas por arquivos HTML e CSS estáticos, você pode visualizá-lo diretamente no seu navegador.
+Como o projeto é estático (apenas HTML e CSS), você pode visualizá-lo diretamente no seu navegador.
 
 1.  **Clone o Repositório:**
     ```bash
     git clone [https://github.com/DTCHUCRO/makelux.git](https://github.com/DTCHUCRO/makelux.git)
     ```
-2.  **Navegue até a pasta do projeto:**
+
+2.  **Acesse a pasta:**
     ```bash
     cd makelux
     ```
+
 3.  **Abra o arquivo:**
-    Simplesmente **clique duas vezes** no arquivo `index.html` (ou arraste-o para o seu navegador).
+    Simplesmente **clique duas vezes** no arquivo `index.html` (ou arraste-o para a janela do seu navegador).
 
 ---
 
 ## 🤝 Contribuições
 
-Este projeto está aberto a contribuições. Sinta-se à vontade para:
+Contribuições são sempre bem-vindas! Sinta-se à vontade para:
 
 1.  Fazer um **Fork** do projeto.
-2.  Criar uma nova *branch* para sua funcionalidade (`git checkout -b feature/NovaFuncionalidade`).
-3.  Comitar suas alterações (`git commit -m 'Adiciona Nova Funcionalidade'`).
-4.  Fazer **Push** para a *branch* (`git push origin feature/NovaFuncionalidade`).
-5.  Abrir um **Pull Request**.
-
----
-
-## 📝 Licença
-
-Este projeto está sob a Licença MIT. Veja o arquivo [`LICENSE`](LICENSE) para mais detalhes.
+2.  Criar uma nova *branch* para sua funcionalidade (`git checkout -b feature/sua-melhoria`).
+3.  Fazer **Push** e abrir um **Pull Request**.
 
 ---
 
 ## 📞 Contato
 
 Desenvolvido por **DTCHUCRO** e **shinylucasin**.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a Licença MIT.
+````
