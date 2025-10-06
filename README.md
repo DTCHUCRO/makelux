@@ -1,4 +1,3 @@
-```markdown
 # 💄 Make Lux
 
 Projeto de e-commerce focado na venda de produtos de maquiagem.
