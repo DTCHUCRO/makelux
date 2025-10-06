@@ -31,14 +31,14 @@ A página inicial (`index.html`) apresenta as seguintes funcionalidades:
 Embora o código não mostre a estrutura completa, o HTML sugere a seguinte organização de arquivos e pastas:
 
 makelux/
-├── index.html
-├── produtos.html
-├── sobre.html
-├── contato.html
-├── login.html
-├── cadastro.html
-├── batom.html
-└── imagem/
+├── index.html          # Página Inicial (Home)
+├── produtos.html       # Lista completa de produtos
+├── sobre.html          # Informações sobre a loja
+├── contato.html        # Formulário ou informações de contato
+├── login.html          # Página de Login
+├── cadastro.html       # Página de Cadastro de usuário
+├── batom.html          # Exemplo de página de produto específico
+└── imagem/             # Diretório para todas as imagens dos produtos
     ├── batom.jpg
     ├── base.png
     ├── mascara.png
